@@ -1,0 +1,24 @@
+2023-Sep-19 15:53:23 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-19 15:53:23 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-19 15:53:28 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-19 15:53:31 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-19 15:53:31 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-19 15:53:32 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-19 15:53:32 PM [pool-1-thread-1] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-19 15:53:32 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-19 15:53:32 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-19 15:53:34 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-19 15:53:36 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-19 15:53:36 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-19 15:53:37 PM [pool-1-thread-1] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-19 15:53:37 PM [pool-1-thread-1] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed

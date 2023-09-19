@@ -1,10 +1,14 @@
-package com.qa.automation.stefdefs;
+package com.qa.automation.stepdefs;
+
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hamcrest.Condition.Step;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -39,12 +43,26 @@ public class StepfDef {
 		wait = new WebDriverWait(driver, implictlyWaitTimeoutSec);
 	}
 
-	@After
+	@After(order =1)
 	public void cleanUp()
 	{
 		WebDriverFactory.quitDriver();
 		scn.log("Browser got closed");
 		logger.info("Browser got closed");
+	}
+	
+	@After(order =2)// this will execute first,higher number
+	public void takeScreenShot(Scenario s)
+	{
+		if (s.isFailed()) 
+		{
+			TakesScreenshot scrnShot = (TakesScreenshot)driver;
+			byte[] data = scrnShot.getScreenshotAs(OutputType.BYTES);
+			scn.attach(data, "image/png", "Failed step name: " + s.getName());
+		}else
+		{
+			scn.log("test case is passed, no screenshot captured");
+		}
 	}
 
 	@Given("user navigate to the home application url")
@@ -134,6 +152,78 @@ public class StepfDef {
 		WebElement loggedInUserNameTxtEle = driver.findElement(By.xpath("//a[text()= ' Logged in as ']/b"));
 		Assert.assertEquals(loggedInUserName, loggedInUserNameTxtEle.getText().trim());
 	}
+	
+	
+	
+	@When("user header over to products page")
+	public void user_header_over_to_products_page() {
+		driver.navigate().to(baseUrl + "/products");
+	}
+
+	@When("user redirected to products page with title as {string}")
+	public void user_redirected_to_products_page_with_title_as(String pageTitle) {
+		wait.until(ExpectedConditions.titleContains(pageTitle));
+		Assert.assertEquals(pageTitle, driver.getTitle());
+	   
+	}
+	@When("url for the login page contains the {string} as keyword")
+	public void url_for_the_login_page_contains_the_as_keyword(String KeywordInUrl) {
+		wait.until(ExpectedConditions.urlContains(KeywordInUrl));
+		Assert.assertEquals(true, driver.getCurrentUrl().contains(KeywordInUrl));
+	    
+	}
+	@When("user search for a product {string}")
+	public void user_search_for_a_product(String productname) {
+	   WebElement productSearchBoxEle = driver.findElement(By.xpath("//input[@id='search_product']"));
+	   productSearchBoxEle.sendKeys(productname);	
+	}
+	
+	@When("click on search button")
+	public void click_on_search_button() {
+		WebElement productSearchBTNEle = driver.findElement(By.xpath("//button[@id='submit_search']"));
+		productSearchBTNEle.click();   
+	}
+	
+	@Then("from the product list the first product contain the {string} as keyword")
+	public void from_the_product_list_the_first_product_contain_the_as_keyword(String productnameKeyword) {
+	   List<WebElement> searchedproductListEle = driver.findElements(By.xpath("//div[@class='features_items']//div[@class='productinfo text-center']/p"));
+	   Assert.assertEquals(true, searchedproductListEle.get(0).getText().contains(productnameKeyword));
+	}
+	
+	
+	
+	@When("user is able to see {string} header")
+	public void user_is_able_to_see_header(String categoryStringValue) {
+	    // Write code here that turns the phrase above into concrete actions
+		 WebElement categorystringEle = driver.findElement(By.xpath("//h2[text()='Category']"));
+		   Assert.assertEquals(categoryStringValue,categorystringEle.getText());
+	}
+
+	@Then("under Category below list is displayed")
+	public void under_category_below_list_is_displayed(List<String> brandcategoryNameList) {
+	    // Write code here that turns the phrase above into concrete actions
+	    // For automatic transformation, change DataTable to one of
+	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+	    //
+	    // For other transformations you can register a DataTableType.
+	    List<String> expectedbrandCategoryList = brandcategoryNameList;
+	    
+	    List<WebElement> actbrandCategoryListEle = driver.findElements(By.xpath("//div[@id='accordian']//div[@class='panel-heading']//a"));
+	    
+	    for(int i=0; i<expectedbrandCategoryList.size(); i++)
+	    	{
+	    	  //System.out.println(actbrandCategoryListEle.get(i).getText());
+	    	  Assert.assertEquals(expectedbrandCategoryList.get(i),actbrandCategoryListEle.get(i).getText());
+	    	}
+	}
+	
+	
+	
+	
+	
+	
 
 
 }

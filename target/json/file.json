@@ -1,1 +1,157 @@
-[]
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Navigation to the base URL of application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5789121900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the home application url",
+            "match": {
+              "location": "com.qa.automation.stepdefs.StepfDef.user_navigate_to_the_home_application_url()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-19T11:35:38.419Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8060495000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.automation.stepdefs.StepfDef.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Under brands different brand visibilty validation",
+        "description": "",
+        "id": "e-commerce-project-website-health-checkup;under-brands-different-brand-visibilty-validation",
+        "after": [
+          {
+            "output": [
+              "test case is passed, no screenshot captured"
+            ],
+            "result": {
+              "duration": 6981000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.automation.stepdefs.StepfDef.takeScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "Browser got closed"
+            ],
+            "result": {
+              "duration": 860698300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.automation.stepdefs.StepfDef.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 95716200,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user is able to see \"CATEGORY\" header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CATEGORY\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.qa.automation.stepdefs.StepfDef.user_is_able_to_see_header(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 139626900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "under Category below list is displayed",
+            "match": {
+              "location": "com.qa.automation.stepdefs.StepfDef.under_category_below_list_is_displayed(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "WOMEN"
+                ]
+              },
+              {
+                "cells": [
+                  "MEN"
+                ]
+              },
+              {
+                "cells": [
+                  "KIDS"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          },
+          {
+            "name": "@healthcheck"
+          },
+          {
+            "name": "@ProdMainCategory"
+          }
+        ]
+      }
+    ],
+    "name": "E-commerce Project Website Health Checkup",
+    "description": "",
+    "id": "e-commerce-project-website-health-checkup",
+    "keyword": "Feature",
+    "uri": "classpath:features/HealthCheck.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@healthcheck",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 5
+        }
+      }
+    ]
+  }
+]
