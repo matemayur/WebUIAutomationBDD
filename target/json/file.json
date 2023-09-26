@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5789121900,
+              "duration": 12733532100,
               "status": "passed"
             },
             "line": 5,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2023-09-19T11:35:38.419Z",
+        "start_timestamp": "2023-09-26T11:51:33.032Z",
         "before": [
           {
             "result": {
-              "duration": 8060495000,
+              "duration": 4531605100,
               "status": "passed"
             },
             "match": {
@@ -46,7 +46,7 @@
               "test case is passed, no screenshot captured"
             ],
             "result": {
-              "duration": 6981000,
+              "duration": 7288500,
               "status": "passed"
             },
             "match": {
@@ -58,7 +58,7 @@
               "Browser got closed"
             ],
             "result": {
-              "duration": 860698300,
+              "duration": 731049100,
               "status": "passed"
             },
             "match": {
@@ -71,7 +71,7 @@
         "steps": [
           {
             "result": {
-              "duration": 95716200,
+              "duration": 89018700,
               "status": "passed"
             },
             "line": 48,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 139626900,
+              "duration": 91166100,
               "status": "passed"
             },
             "line": 49,

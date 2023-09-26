@@ -1,0 +1,28 @@
+2023-Sep-26 17:18:21 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-26 17:18:21 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-26 17:18:26 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-26 17:18:27 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-26 17:18:32 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Browser navigated to the url: https://automationexercise.com/
+2023-Sep-26 17:18:38 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-26 17:18:38 PM [main] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-26 17:18:38 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-26 17:18:38 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-26 17:18:40 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-26 17:18:40 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-26 17:18:48 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Browser navigated to the url: https://automationexercise.com/
+2023-Sep-26 17:18:55 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-26 17:18:55 PM [main] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-26 17:18:55 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-26 17:18:55 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-26 17:18:57 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-26 17:18:57 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-26 17:19:04 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Browser navigated to the url: https://automationexercise.com/
+2023-Sep-26 17:19:13 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-26 17:19:13 PM [main] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed
+2023-Sep-26 17:19:13 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up for browser path is completed
+2023-Sep-26 17:19:13 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Setting up chrome binary completed
+2023-Sep-26 17:19:15 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Chrome Browser invoked
+2023-Sep-26 17:19:15 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver maximized and implicit time out set to 30 seconds
+2023-Sep-26 17:19:20 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Browser navigated to the url: https://automationexercise.com/
+2023-Sep-26 17:19:25 PM [main] INFO  com.qa.automation.core.WebDriverFactory - Driver closed
+2023-Sep-26 17:19:25 PM [main] INFO  com.qa.automation.stepdefs.StepfDef - Browser got closed

@@ -1,3 +1,5 @@
+com\qa\automation\stepdefs\StepfDef.class
 com\qa\automation\runners\TestRunner.class
 com\qa\automation\core\WebDriverFactory.class
-com\qa\automation\stepdefs\StepfDef.class
+com\qa\automation\pageobjects\LandingPageObjects.class
+com\qa\automation\pageobjects\SignupLoginPageObjects.class
